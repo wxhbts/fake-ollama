@@ -18,9 +18,6 @@
 # 从 GitHub Container Registry 拉取
 docker pull ghcr.io/spoonnotfound/fake-ollama:latest
 
-# 或者从 Docker Hub 拉取
-docker pull spoonnotfound/fake-ollama
-
 # 运行容器
 docker run -d -p 11434:11434 spoonnotfound/fake-ollama
 ```

@@ -867,6 +867,13 @@ func healthHandler(c *gin.Context) {
 }
 
 func main() {
+	// 设置 gin mode
+	ginMode := os.Getenv("GIN_MODE")
+	if ginMode == "" {
+		ginMode = gin.ReleaseMode
+	}
+	gin.SetMode(ginMode)
+
 	r := gin.Default()
 
 	// 添加全局错误处理中间件
