@@ -169,11 +169,11 @@ var modelModifiedTimes map[string]time.Time
 const (
 	// 中文响应文本
 	ChineseThinkText = "嗯，我要开始思考了。"
-	ChineseResponseText = "这是一条来自[fake-ollama](https://github.com/spoonnotfound/fake-ollama)的固定回复。"
+	ChineseResponseText = "恭喜你，成功成为了小丑。"
 
 	// 英文响应文本
 	EnglishThinkText = "Hmm, let me think about it."
-	EnglishResponseText = "This is a fixed response from [fake-ollama](https://github.com/spoonnotfound/fake-ollama)."
+	EnglishResponseText = "Congratulations, you have successfully become a clown."
 )
 
 // 添加初始化函数
@@ -858,7 +858,7 @@ func deleteHandler(c *gin.Context) {
 
 func versionHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"version": "0.5.7",
+		"version": "0.5.11",
 	})
 }
 
